@@ -21,7 +21,7 @@ function App() {
     setError(null);  // Reseta o erro antes de nova requisição
 
     try {
-      const response = await fetch(`http://localhost:8000/?pokemon_name=${pokemon}`);
+      const response = await fetch(`https://pokenxaqueca-backend-production.up.railway.app/?pokemon_name=${pokemon}`);
 
       if (!response.ok) {
         const errorResponse = await response.json();
